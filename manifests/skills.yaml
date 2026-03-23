@@ -1,0 +1,21 @@
+skills:
+  - name: Ansible Playbook Design
+    slug: ansible-playbook-design
+    path: skills/ansible-agent/playbook-design.md
+    tags: [ansible, playbooks, automation]
+  - name: Ansible Role Authoring
+    slug: ansible-role-authoring
+    path: skills/ansible-agent/role-authoring.md
+    tags: [ansible, roles, automation]
+  - name: Inventory and Variables Design
+    slug: inventory-and-variables
+    path: skills/ansible-agent/inventory-and-variables.md
+    tags: [ansible, inventory, variables]
+  - name: Ansible Vault Secrets Management
+    slug: ansible-vault-secrets-management
+    path: skills/ansible-agent/vault-secrets.md
+    tags: [ansible, vault, secrets, security]
+  - name: Ansible Collection Authoring
+    slug: ansible-collection-authoring
+    path: skills/ansible-agent/collection-authoring.md
+    tags: [ansible, collections, galaxy, modules]

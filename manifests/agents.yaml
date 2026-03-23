@@ -1,0 +1,18 @@
+agents:
+  - name: Ansible Playbooks and Roles Specialist
+    slug: ansible-playbooks-roles
+    domain: infrastructure-automation
+    status: active
+    path: agents/ansible-agent.md
+    skills:
+      - skills/ansible-agent/playbook-design.md
+      - skills/ansible-agent/role-authoring.md
+      - skills/ansible-agent/inventory-and-variables.md
+      - skills/ansible-agent/vault-secrets.md
+      - skills/ansible-agent/collection-authoring.md
+    tags:
+      - ansible
+      - playbooks
+      - roles
+      - inventory
+      - automation
