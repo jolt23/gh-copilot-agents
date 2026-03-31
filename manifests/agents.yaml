@@ -1,4 +1,17 @@
 agents:
+  - name: Ansible Code Review Specialist
+    slug: ansible-code-reviewer
+    domain: infrastructure-automation
+    status: active
+    path: agents/ansible-code-reviewer-agent.md
+    skills:
+      - skills/code-review/ansible-review-rubric.md
+    tags:
+      - ansible
+      - code-review
+      - playbooks
+      - roles
+      - security
   - name: Ansible Playbooks and Roles Specialist
     slug: ansible-playbooks-roles
     domain: infrastructure-automation
@@ -16,3 +29,54 @@ agents:
       - roles
       - inventory
       - automation
+  - name: Code Review Orchestrator
+    slug: code-review-orchestrator
+    domain: software-quality
+    status: active
+    path: agents/code-review-orchestrator-agent.md
+    skills:
+      - skills/code-review/review-orchestration.md
+    tags:
+      - code-review
+      - orchestration
+      - multi-language
+      - quality
+  - name: Go Code Review Specialist
+    slug: go-code-reviewer
+    domain: go-engineering
+    status: active
+    path: agents/go-code-reviewer-agent.md
+    skills:
+      - skills/code-review/go-review-rubric.md
+    tags:
+      - go
+      - golang
+      - code-review
+      - testing
+      - performance
+  - name: Java Code Review Specialist
+    slug: java-code-reviewer
+    domain: java-engineering
+    status: active
+    path: agents/java-code-reviewer-agent.md
+    skills:
+      - skills/code-review/java-review-rubric.md
+    tags:
+      - java
+      - code-review
+      - spring
+      - testing
+      - performance
+  - name: TypeScript Code Review Specialist
+    slug: typescript-code-reviewer
+    domain: typescript-engineering
+    status: active
+    path: agents/typescript-code-reviewer-agent.md
+    skills:
+      - skills/code-review/typescript-review-rubric.md
+    tags:
+      - typescript
+      - code-review
+      - node
+      - frontend
+      - testing

@@ -5,7 +5,9 @@
 - Create a new file under `agents/<agent-name>-agent.md`.
 - Add the agent's purpose, scope, workflow, guardrails, operating guidance, and example requests to that file.
 - Add or reference reusable skills in `skills/`.
-- Register the agent in `manifests/agents.yaml`.
+- Register the agent in `manifests/agents.yaml` and keep the list alphabetized by `name`.
+- If you add a new skill entry, keep `manifests/skills.yaml` alphabetized by `name`.
+- Add the agent to the `README.md` Agent Catalog and keep the catalog alphabetized by agent display name.
 
 ## Good agent design
 

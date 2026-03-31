@@ -53,6 +53,29 @@ It is intended to help with:
 - reusable workflow and quality guidance
 - practical examples that can be adapted for new agents
 
+## Agent Catalog
+
+The repository currently includes the following agents.
+
+- [Ansible Code Review Specialist](agents/ansible-code-reviewer-agent.md): Reviews Ansible pull request changes for idempotency, safety, variable design, and operational risk.
+- [Ansible Playbooks and Roles Specialist](agents/ansible-agent.md): Creates, reviews, and improves Ansible playbooks, roles, inventories, and automation structure.
+- [Code Review Orchestrator](agents/code-review-orchestrator-agent.md): Coordinates multi-language code review, routes to specialists, and consolidates findings.
+- [Go Code Review Specialist](agents/go-code-reviewer-agent.md): Reviews Go pull request changes for correctness, concurrency, reliability, testing, and performance.
+- [Java Code Review Specialist](agents/java-code-reviewer-agent.md): Reviews Java pull request changes for correctness, exception strategy, concurrency, resource handling, and test quality.
+- [TypeScript Code Review Specialist](agents/typescript-code-reviewer-agent.md): Reviews TypeScript pull request changes for type safety, runtime correctness, async behavior, and maintainability.
+
+Catalog maintenance rules:
+
+- Add every new agent to this Agent Catalog section.
+- Keep catalog entries sorted alphabetically by display name.
+
+Review behavior defaults for the code review agents:
+
+- Default scope is pull request changes.
+- Findings are sorted by severity from critical to low.
+- Feedback is concise and actionable.
+- Full-repository completeness review is run only when explicitly requested.
+
 ## Recommended Conventions
 
 - One markdown file per agent.

@@ -43,3 +43,15 @@ Agents should:
 - Provide concrete examples.
 - Make linked skills obvious.
 - Keep duplication low.
+
+## Manifest ordering
+
+- Keep entries in `manifests/agents.yaml` sorted alphabetically by `name`.
+- Keep entries in `manifests/skills.yaml` sorted alphabetically by `name`.
+- Preserve alphabetical ordering whenever adding, removing, or renaming entries.
+
+## README catalog ordering
+
+- Keep `README.md` Agent Catalog entries complete for all active agents.
+- Keep Agent Catalog entries sorted alphabetically by agent display name.
+- Preserve alphabetical ordering whenever adding, removing, or renaming agents.
