@@ -16,6 +16,7 @@ AGENTS_DIR="${HOME}/.copilot/agents"
 MANIFEST="${REPO_ROOT}/manifests/agents.yaml"
 DRY_RUN=false
 REMOVE=false
+REQUIRED_ACTIVE_AGENT_PATHS=("agents/kubernetes-agent.md")
 
 # ── Colour helpers ────────────────────────────────────────────────────────────
 GREEN='\033[0;32m'; YELLOW='\033[1;33m'; RED='\033[0;31m'; NC='\033[0m'
@@ -61,6 +62,17 @@ AGENT_ENTRIES=()
 while IFS= read -r entry; do
   AGENT_ENTRIES+=("$entry")
 done < <(yq e '.agents[] | .path + "|" + .status' "$MANIFEST")
+
+# Process in stable order, independent of manifest formatting changes.
+IFS=$'\n' AGENT_ENTRIES=($(printf '%s\n' "${AGENT_ENTRIES[@]}" | sort))
+unset IFS
+
+# Ensure required agents are represented as active entries in the manifest.
+for required_path in "${REQUIRED_ACTIVE_AGENT_PATHS[@]}"; do
+  if ! printf '%s\n' "${AGENT_ENTRIES[@]}" | grep -Fxq "${required_path}|active"; then
+    warn "Expected active agent missing from manifest: ${required_path}"
+  fi
+done
 
 created=0; skipped=0; removed=0; errors=0
 

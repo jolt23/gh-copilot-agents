@@ -31,6 +31,10 @@ skills:
     slug: java-review-rubric
     path: skills/code-review/java-review-rubric.md
     tags: [java, code-review, spring, testing, performance]
+  - name: Kustomize Template Design
+    slug: kustomize-template-design
+    path: skills/kubernetes-agent/kustomize-template-design.md
+    tags: [kubernetes, kustomize, manifests, overlays, environments]
   - name: Review Orchestration
     slug: review-orchestration
     path: skills/code-review/review-orchestration.md
@@ -39,7 +43,3 @@ skills:
     slug: typescript-review-rubric
     path: skills/code-review/typescript-review-rubric.md
     tags: [typescript, code-review, node, frontend, testing]
-  - name: Kustomize Template Design
-    slug: kustomize-template-design
-    path: skills/kubernetes-agent/kustomize-template-design.md
-    tags: [kubernetes, kustomize, manifests, overlays, environments]

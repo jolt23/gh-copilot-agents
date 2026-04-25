@@ -67,19 +67,6 @@ agents:
       - spring
       - testing
       - performance
-  - name: TypeScript Code Review Specialist
-    slug: typescript-code-reviewer
-    domain: typescript-engineering
-    status: active
-    path: agents/typescript-code-reviewer-agent.md
-    skills:
-      - skills/code-review/typescript-review-rubric.md
-    tags:
-      - typescript
-      - code-review
-      - node
-      - frontend
-      - testing
   - name: Kubernetes Configuration Specialist
     slug: kubernetes-configurations
     domain: kubernetes-platform
@@ -93,3 +80,16 @@ agents:
       - manifests
       - platform
       - environments
+  - name: TypeScript Code Review Specialist
+    slug: typescript-code-reviewer
+    domain: typescript-engineering
+    status: active
+    path: agents/typescript-code-reviewer-agent.md
+    skills:
+      - skills/code-review/typescript-review-rubric.md
+    tags:
+      - typescript
+      - code-review
+      - node
+      - frontend
+      - testing
