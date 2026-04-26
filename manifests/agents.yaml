@@ -67,6 +67,19 @@ agents:
       - spring
       - testing
       - performance
+  - name: Kubernetes Configuration Specialist
+    slug: kubernetes-configurations
+    domain: kubernetes-platform
+    status: active
+    path: agents/kubernetes-agent.md
+    skills:
+      - skills/kubernetes-agent/kustomize-template-design.md
+    tags:
+      - kubernetes
+      - kustomize
+      - manifests
+      - platform
+      - environments
   - name: TypeScript Code Review Specialist
     slug: typescript-code-reviewer
     domain: typescript-engineering
